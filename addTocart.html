@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddToCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Welcome To Cart</h1>
+        <p id="totalItems"></p>
+        <p id="totalCost"></p>
+    </center>
+
+    <div id="cartData"></div>
+    <p id="p"></p>
+    <script>
+
+
+        window.addEventListener("DOMContentLoaded", () => {
+            let allData = JSON.parse(localStorage.getItem("items")) || [];
+
+            // Normalize data
+            allData = allData.map(x => ({
+                ...x,
+                count: x.count || 1,
+                Price: typeof x.Price === "string" && x.Price[0] === "₹"
+                    ? parseFloat(x.Price.slice(1))
+                    : parseFloat(x.Price) || 0
+            }));
+
+            let cartData = document.getElementById("cartData");
+
+            let totalCost = document.getElementById("totalCost");
+            let totalItems = document.getElementById("totalItems");
+
+            // Function to update localStorage and UI
+            function updateLocalStorage() {
+                localStorage.setItem("items", JSON.stringify(allData));
+            }
+
+            function updateCartSummary() {
+                const totalItemsCount = allData.reduce((sum, item) => sum + item.count, 0);
+                const totalCostValue = allData.reduce((sum, item) => sum + item.count * item.Price, 0);
+
+                totalItems.textContent = `Total Items: ${totalItemsCount}`;
+                totalCost.textContent = `Total Cost: ₹${totalCostValue.toFixed(2)}`;
+            }
+
+            function renderCart() {
+                cartData.innerHTML = ""; // Clear previous content
+
+                if (allData.length === 0) {
+                    document.querySelector("p").textContent = "Your cart is Empty";
+                    return;
+                }
+
+                allData.forEach((x) => {
+                    let card = document.createElement("div");
+                    card.innerHTML = `
+                   <div style=" height:300px;width:250px; padding:6px;">
+                 <img  style="height:200px;width:200px;"src="${x.Image}"/>
+                  <p>${x.Description}</p>
+                  <span>₹ ${x.Price}</span>
+               </div>
+                   <div>
+                    <button class="dec">-</button>
+                    <button class="count">${x.count}</button>
+                    <button class="inc">+</button>
+                    </div>
+                   <div>
+                     <button class="remove">Remove</button>
+                    </div>
+                `;
+                    card.style.boxShadow = "3px 3px 3px 3px white"
+                    card.style.height = "400px";
+                    card.style.backgroundColor = "white"
+                    card.style.display = "flex";
+                    card.style.flexDirection = "column"
+                    cartData.style.justifyContent = "space-evenly"
+                    card.style.gap = "10px"
+                    card.style.alignItems = "center"
+                    card.style.width = "250px"
+                    card.style.padding = "10px"
+
+
+                    cartData.append(card);
+
+                    let countitems = card.querySelector(".count");
+
+                    // Decrease count
+                    card.querySelector(".dec").addEventListener("click", () => {
+                        if (x.count > 1) {
+                            x.count--;
+                            countitems.textContent = x.count;
+                            updateLocalStorage();
+                            updateCartSummary();
+                        }
+                    });
+
+                    // Increase count
+                    card.querySelector(".inc").addEventListener("click", () => {
+                        x.count++;
+                        countitems.textContent = x.count;
+                        updateLocalStorage();
+                        updateCartSummary();
+                    });
+
+                    // Remove item
+                    card.querySelector(".remove").addEventListener("click", () => {
+                        let confirmDelete = confirm("Are you sure you want to delete this item?");
+                        if (confirmDelete) {
+                            let idx = allData.findIndex(item => item.Image === x.Image);
+                            if (idx !== -1) {
+                                allData.splice(idx, 1);
+                                card.remove();
+                                updateLocalStorage();
+                                updateCartSummary();
+                                if (allData.length === 0) {
+                                    document.querySelector("p").textContent = "Your cart is Empty";
+                                    setTimeout(() => {
+                                        location.href="main.html"
+                                    }, 2000);
+                                }
+                            }
+                        }
+                    });
+                });
+
+                updateCartSummary();
+            }
+
+            // Initial render
+            renderCart();
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body id="bd">
+  <div id="mainbg">
+    <div id="maindiv">
+      <h2>BOOKSTORE</h3>
+        <div id="searchdiv">
+          <input type="search" name="" id="find" placeholder="Search">
+          <button id="searchbtn" onclick="searchItem();"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="logindiv">
+          <i class="fa-solid fa-heart" id="i" onclick="message()" ondblclick="message1()"></i>
+          <a href="addTocart.html"><i class="fa-solid fa-cart-shopping" id="i"></i></a>
+          <a href="login.html"><i class="fa-solid fa-right-to-bracket" id="i"></i></a>
+          <a href="signup.html"><i class="fa-solid fa-user" id="i"></i></a>
+        </div>
+    </div>
+    <div id="div2">
+      <a href="#home" class="a">Home</a>
+      <a href="#services" class="a">Services</a>
+      <a href="#cardsContainer" class="a">Books</a>
+      <a href="#review" class="a">Reviews</a>
+      <a href="#blog" class="a">Blogs</a>
+
+    </div>
+
+    <div id="home">
+      <div id="homecard">
+        <div id="hm">
+          <h1>Upto 75% off</h1>
+          <p id="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, cupiditate? Eius adipisci quidem
+            deleniti
+            itaque impedit quia necessitatibus, voluptate natus minus aut possimus qui assumenda fugit ipsam dolorum
+            eaque dolores.</p>
+          <button id="btn1">Shop Now</button>
+        </div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img3.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="services">
+      <div id="servmain">
+        <div class="service1">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h5>Free Shipping</h5>
+          <span>order over Rs.800</span>
+        </div>
+        <div class="service1">
+          <i class="fa-solid fa-lock"></i>
+          <h5>Secure Payment</h5>
+          <span>100 Secure Payment</span>
+        </div>
+        <div class="service1">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h5>Easy Return</h5>
+          <span>10 days Return</span>
+        </div>
+        <div class="service1">
+          <i class="fa-solid fa-headset"></i>
+          <h5>24/7 Support</h5>
+          <span>Call us Anytime</span>
+        </div>
+      </div>
+    </div>
+    <h1 id="cardch1">Books</h1>
+    <div class="cardsContainer" id="cardsContainer"></div>
+    <div id="review">
+      <h1>Reviews</h1>
+      <div id="reviewclient">
+        <div class="clients">
+          <img src="users.jpeg" alt="">
+          <h5>Yug Sing</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, animi.</p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div class="clients">
+          <img src="users.jpeg" alt="">
+          <h5>Yug Sing</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, blanditiis.</p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div class="clients">
+          <img src="users.jpeg" alt="">
+          <h5>Yug Sing</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, at?</p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+    </div>
+    <h1 id="blogh1">Blogs</h1>
+    <div id="blog">
+
+      <div id="blogmain">
+        <img src="blog1.jpeg" alt="">
+        <h5>Blog Title Goes Here</h5>
+        <p class="text">Lorem, ipsum dolor sit amet consectetur elit. <span class="moreText">
+            adipisicing elit.</span></p>
+        <button id="readmore">Read More</button>
+      </div>
+      <div id="blogmain">
+        <img src="blog2.jpg" alt="">
+        <h5>Blog Title Goes Here</h5>
+        <p class="text1">Lorem, ipsum dolor sit amet consectetur elit. <span class="moreText1">
+            Commodi, fuga?</span></p>
+        <button id="readmore1">Read More</button>
+      </div>
+      <div id="blogmain">
+        <img src="blog3.jpeg" alt="">
+        <h5>Blog Title Goes Here</h5>
+        <p class="text2">Lorem, ipsum dolor sit amet consectetur elit. <span class="moreText2">
+            Commodi, fuga?</span></p>
+        <button id="readmore2">Read More</button>
+      </div>
+    </div>
+  </div>
+  <footer>&copy; 2024 || Nayan Choudhari.</footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

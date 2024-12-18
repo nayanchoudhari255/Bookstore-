@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="Sign">
+        <h1 id="sh">Online Book Store</h1>
+        <div class="container">
+            <div class="header">
+                <h1>Login</h1>
+                <hr>
+            </div>
+            <form action="">
+                <input type="email" placeholder="Email" required id="emailE">
+                <input type="password" placeholder="Password" required id="passP">
+                <div id="checkbox"><input type="checkbox" id="cb" name="checkbox" required> <span>Remember</span></div>
+                <center><input id="btn" type="button" onclick="login()" value="Login"></center>
+            </form><br>
+            <center>
+                <p id="pl"><a href="#" onclick="forget()">Forget Password?</a></p><br>
+                <p id="pl">Not a Member? <a href="signup.html">SignUp</a></p>
+            </center>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

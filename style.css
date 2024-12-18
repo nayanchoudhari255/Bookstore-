@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    background-color: #C6E7FF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#bd {
+
+    background-color: #C6E7FF;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+#sh {
+    margin-top: -10px;
+}
+
+.Sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+    gap: 10px;
+
+}
+
+.container {
+    box-shadow: 5px;
+    height: 420px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+
+}
+
+.header h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.header p {
+    padding: 10px;
+}
+
+#div2 {
+    font-size: 20px;
+    margin-top: 20px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.a {
+    color: black;
+    text-decoration: none;
+}
+
+.a:hover {
+    border-bottom: 1px solid black;
+}
+
+#find {
+    width: 300px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#checkbox {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+#pl {
+    margin-top: -10px;
+}
+
+#btn {
+    margin-top: 10px;
+    width: 200px;
+  
+    background-color: #C6E7FF;
+    border: none;
+}
+
+#cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#mainbg {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#btn1,
+#readmore,
+#readmore1,
+#readmore2,
+.count,
+.remove {
+    padding: 5px;
+    border: none;
+    background: #C6E7FF;
+}
+
+#maindiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+
+
+}
+
+#searchbtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+
+}
+
+i {
+    font-size: 15px;
+}
+
+#logindiv #i {
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+}
+
+#logindiv #i:hover {
+    color: #ffa500;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hm {
+    width: 400px;
+}
+
+#homecard {
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px white;
+    height: 300px;
+    width: 900px;
+    padding: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel {
+    height: 200px;
+    width: 400px;
+}
+
+.carousel-inner {
+    height: 250px;
+    width: 400px;
+}
+
+.carousel-inner img {
+    height: 250px;
+    width: 400px;
+
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#servmain {
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px white;
+    height: 90px;
+    width: 900px;
+    padding: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.service1 i {
+    font-size: 20px;
+}
+
+.service1 i:hover {
+    color: #ffa500;
+}
+
+#cardch1 {
+
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#reviewclient {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#review h1 {
+    text-align: center;
+}
+
+.clients {
+    border: 1px solid gray;
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+}
+
+.clients img {
+    height: 60px;
+    width: 70px;
+}
+
+.clients h5 {
+    margin-top: 5px;
+}
+
+.clients i {
+    color: #ffa500;
+}
+
+#blog {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+#blogh1 {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#blogmain {
+    background-color: white;
+    box-shadow: 3px white;
+
+    height: 340px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#blogmain img {
+    height: 150px;
+    width: 300px;
+}
+
+#blogmain p {
+    margin-top: 5px;
+}
+
+footer {
+    background-color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.moreText,
+.moreText1,
+.moreText2 {
+    display: none;
+}
+
+.text.show-more .moreText,
+.text1.show-more .moreText1,
+.text2.show-more .moreText2 {
+    display: inline;
+}
+
+#cartData {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#totalItems {
+    padding: 10px;
+}
+
+.inc,
+.dec {
+    width: 20px;
+}
+
+@media screen and (max-width: 987px) {
+
+    body {
+       
+        background-color: #C6E7FF;
+        background-repeat: no-repeat;
+
+        height: auto;
+    }
+
+    #sh {
+        margin-top: -30px;
+    }
+
+    .Sign {
+        display: flex;
+        justify-content: center;
+        padding-top: 70px;
+        margin-top: 40%;
+        margin-bottom: 10%;
+    }
+
+    .container {
+        border: 1px solid black;
+        box-shadow: 5px;
+        height: 360px;
+        width: 300px;
+        border-radius: 5px;
+
+
+    }
+
+    .header h1 {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .header p {
+        padding: 5px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    input {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #checkbox {
+        padding: 10px;
+
+        display: inline;
+        margin-top: 10px;
+    }
+
+
+    #btn {
+        margin-top: 10px;
+        width: 200px;    
+ background-color: #C6E7FF;
+        border: none;
+    }
+
+    #bd {
+        /* background: linear-gradient(to bottom right,#89A8B2 ,#B3C8CF,#E5E1DA ); */
+        background-color: #C6E7FF;
+        /* background-repeat: no-repeat;
+       background-size:cover;
+       height:auto;   */
+    }
+
+    #cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #mainbg {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #btn1,
+    #readmore,
+    #readmore1,
+    #readmore2 {
+        padding: 2px;
+        border: none;
+        width: 90px;
+        font-size: 10px;
+        /* background: linear-gradient(to bottom right,#89A8B2 ,#E5E1DA  ); */
+        background-color: #C6E7FF;
+    }
+
+    #maindiv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+
+
+
+    }
+
+    #find {
+        height: 30px;
+        width: 200px;
+    }
+
+    #searchbtn {
+        height: 30px;
+        width: 50px;
+        border-radius: 5px;
+
+    }
+
+    i {
+        font-size: 15px;
+    }
+
+    #logindiv #i {
+        font-size: 25px;
+        padding: 10px;
+        color: black;
+    }
+
+    #logindiv #i:hover {
+        color: #ffa500;
+    }
+
+    #div2 {
+        font-size: 15px;
+        margin-top: 20px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .a:hover {
+        border-bottom: 1px solid black;
+    }
+
+
+    #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #homecard {
+        background-color: white;
+        box-shadow: 3px 3px 3px 3px white;
+        height: 200px;
+        width: 350px;
+        padding: 20px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #hm {
+        width: 200px;
+    }
+
+    #hm h1,
+    p {
+        font-size: 10px;
+    }
+
+    #carouselExampleAutoplaying {
+        height: 200px;
+        width: 200px;
+    }
+
+    .carousel-inner {
+        height: 150px;
+        width: 150px;
+    }
+
+    .carousel-item img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #servmain {
+        background-color: white;
+        box-shadow: 3px 3px 3px 3px white;
+        height: 40px;
+        width: 900px;
+        padding: 40px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .service1 {
+        text-align: center;
+        padding: -0px;
+
+    }
+
+    .service1 i {
+        font-size: 15px;
+    }
+
+    .service1 i:hover {
+        color: #ffa500;
+    }
+
+    .service1 h5,
+    span {
+        font-size: 10px;
+    }
+
+    #cardch1 {
+
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    #reviewclient {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    #review h1 {
+        text-align: center;
+    }
+
+    .clients {
+        border: 1px solid gray;
+        height: 160px;
+        width: 120px;
+        padding: 2px;
+    }
+
+    .clients img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .clients h5,
+    i {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .clients i {
+        color: #ffa500;
+    }
+
+    #blog {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+
+    #blogh1 {
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    #blogmain {
+        background-color: white;
+        box-shadow: 3px white;
+        height: 160px;
+        width: 110px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #blogmain img {
+        height: 50px;
+        width: 110px;
+    }
+
+    #blogmain h5,
+    p {
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    footer {
+        background-color: white;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+  }
