@@ -125,30 +125,27 @@ function addTocart(item) {
   alert("Added To Cart")
   localStorage.setItem("items", JSON.stringify(data))
 }
+var readmoreBtn = document.querySelector("#readmore");
+var readmoreBtn1 = document.querySelector("#readmore1");
+var readmoreBtn2 = document.querySelector("#readmore2");
+var text = document.querySelector(".text");
+var text1 = document.querySelector(".text1");
+var text2 = document.querySelector(".text2");
 
+readmoreBtn.addEventListener('click', (e) => {
+  text.classList.toggle("show-more");
+})
+readmoreBtn1.addEventListener('click', (e) => {
+  text1.classList.toggle("show-more");
+})
+readmoreBtn2.addEventListener('click', (e) => {
+  text2.classList.toggle("show-more");
+})
 
-
-// var readmoreBtn = document.querySelector("#readmore");
-// var readmoreBtn1 = document.querySelector("#readmore1");
-// var readmoreBtn2 = document.querySelector("#readmore2");
-// var text = document.querySelector(".text");
-// var text1 = document.querySelector(".text1");
-// var text2 = document.querySelector(".text2");
-
-// readmoreBtn.addEventListener('click', (e) => {
-//   text.classList.toggle("show-more");
-// })
-// readmoreBtn1.addEventListener('click', (e) => {
-//   text1.classList.toggle("show-more");
-// })
-// readmoreBtn2.addEventListener('click', (e) => {
-//   text2.classList.toggle("show-more");
-// })
-
-// var heart = document.querySelector("#i")
-// function message() {
-//   heart.style.color = "red"
-// }
-// function message1() {
-//   heart.style.color = "black"
-// }
+var heart = document.querySelector("#i")
+function message() {
+  heart.style.color = "red"
+}
+function message1() {
+  heart.style.color = "black"
+ }
