@@ -351,7 +351,6 @@ footer {
        
         background-color: #C6E7FF;
         background-repeat: no-repeat;
-
         height: auto;
     }
 
@@ -408,7 +407,7 @@ footer {
     #btn {
         margin-top: 10px;
         width: 200px;    
- background-color: #C6E7FF;
+        background-color: #C6E7FF;
         border: none;
     }
 
@@ -441,7 +440,6 @@ footer {
         border: none;
         width: 90px;
         font-size: 10px;
-        /* background: linear-gradient(to bottom right,#89A8B2 ,#E5E1DA  ); */
         background-color: #C6E7FF;
     }
 
@@ -450,10 +448,7 @@ footer {
         flex-direction: column;
         text-align: center;
         padding: 10px;
-
-
-
-    }
+ }
 
     #find {
         height: 30px;
