@@ -18,6 +18,7 @@ body {
 #bd {
 
     background-color: #C6E7FF;
+
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -106,7 +107,7 @@ input {
 #btn {
     margin-top: 10px;
     width: 200px;
-  
+
     background-color: #C6E7FF;
     border: none;
 }
@@ -143,7 +144,6 @@ input {
     align-items: center;
     text-align: center;
     padding: 10px;
-    
 
 
 }
@@ -348,9 +348,10 @@ footer {
 @media screen and (max-width: 987px) {
 
     body {
-       
+
         background-color: #C6E7FF;
         background-repeat: no-repeat;
+
         height: auto;
     }
 
@@ -406,15 +407,17 @@ footer {
 
     #btn {
         margin-top: 10px;
-        width: 200px;    
+        width: 200px;
         background-color: #C6E7FF;
         border: none;
     }
 
     #bd {
-      
+        /* background: linear-gradient(to bottom right,#89A8B2 ,#B3C8CF,#E5E1DA ); */
         background-color: #C6E7FF;
-        
+        /* background-repeat: no-repeat;
+       background-size:cover;
+       height:auto;   */
     }
 
     #cardsContainer {
@@ -440,6 +443,7 @@ footer {
         border: none;
         width: 90px;
         font-size: 10px;
+        /* background: linear-gradient(to bottom right,#89A8B2 ,#E5E1DA  ); */
         background-color: #C6E7FF;
     }
 
@@ -448,7 +452,10 @@ footer {
         flex-direction: column;
         text-align: center;
         padding: 10px;
- }
+
+
+
+    }
 
     #find {
         height: 30px;
@@ -656,4 +663,4 @@ footer {
         margin-bottom: 10px;
     }
 
-  }
+}
